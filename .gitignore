@@ -1,0 +1,64 @@
+# ==============================
+# Godot generated files
+# ==============================
+.godot/
+/android/
+
+# Imported resource cache
+.import/
+
+# ==============================
+# .NET / C# build output
+# ==============================
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# ==============================
+# IDEs
+# ==============================
+.idea/
+.vs/
+.vscode/
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains
+*.sln.iml
+
+# ==============================
+# Compiled binaries
+# ==============================
+*.dll
+*.pdb
+*.exe
+*.so
+*.dylib
+*.a
+*.lib
+
+# ==============================
+# Operating systems
+# ==============================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Temporary files and logs
+# ==============================
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+

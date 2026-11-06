@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://g7tbfllw8sf8"]
+
+[ext_resource type="PackedScene" uid="uid://6xbovawma1qt" path="res://Models/Scenery/glTF/CommonTree_2.gltf" id="1_6bhk8"]
+[ext_resource type="PackedScene" uid="uid://daeac5m0t5l6k" path="res://Models/Scenery/glTF/CommonTree_4.gltf" id="2_65hvk"]
+[ext_resource type="PackedScene" uid="uid://sdg8rx770a3a" path="res://Models/Scenery/glTF/CommonTree_3.gltf" id="3_kxv44"]
+[ext_resource type="PackedScene" uid="uid://cvoqd6j448kp7" path="res://Models/Scenery/glTF/CommonTree_5.gltf" id="4_e0x3u"]
+[ext_resource type="Texture2D" uid="uid://3trb631y7qv3" path="res://Models/Scenery/glTF/Rocks_Diffuse.png" id="5_1qwms"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6w704"]
+albedo_texture = ExtResource("5_1qwms")
+heightmap_scale = 7.496
+uv1_scale = Vector3(2.17, 2.17, 2.17)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5b57c"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xrl56"]
+
+[sub_resource type="Sky" id="Sky_okvka"]
+sky_material = SubResource("ProceduralSkyMaterial_xrl56")
+
+[sub_resource type="Environment" id="Environment_u3yay"]
+background_mode = 2
+sky = SubResource("Sky_okvka")
+ambient_light_source = 3
+
+[node name="Forest" type="Node3D" unique_id=918329862]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1454719639]
+transform = Transform3D(1, 0, 0, 0, 0.8772113, 0.48010457, 0, -0.48010457, 0.8772113, 0, 2.0709572, 1.2496907)
+
+[node name="CommonTree_22" parent="." unique_id=2090308988 instance=ExtResource("1_6bhk8")]
+transform = Transform3D(0.568, 0, 0, 0, 0.568, 0, 0, 0, 0.568, -0.812359, 0, -4.806283)
+
+[node name="CommonTree_42" parent="." unique_id=1019504248 instance=ExtResource("2_65hvk")]
+transform = Transform3D(0.568, 0, 0, 0, 0.568, 0, 0, 0, 0.568, 0.5622542, 0, -4.6950316)
+
+[node name="CommonTree_32" parent="." unique_id=121165285 instance=ExtResource("3_kxv44")]
+transform = Transform3D(0.568, 0, 0, 0, 0.568, 0, 0, 0, 0.568, -1.2375809, 0, -3.8363655)
+
+[node name="CommonTree_22" parent="CommonTree_32" unique_id=684036972 instance=ExtResource("1_6bhk8")]
+transform = Transform3D(0.77544034, 0, -0.4879925, 0, 0.91621196, 0, 0.4879925, 0, 0.77544034, 5.901722, 0, 0.37666988)
+
+[node name="CommonTree_42" parent="CommonTree_32" unique_id=1983693707 instance=ExtResource("2_65hvk")]
+transform = Transform3D(0.77544034, 0, -0.4879925, 0, 0.91621196, 0, 0.4879925, 0, 0.77544034, 8.612437, 0, 2.405254)
+
+[node name="CommonTree_32" parent="CommonTree_32" unique_id=1864206744 instance=ExtResource("3_kxv44")]
+transform = Transform3D(0.77544034, 0, -0.4879925, 0, 0.91621196, 0, 0.4879925, 0, 0.77544034, 3.749939, 0, 1.835957)
+
+[node name="CommonTree_43" parent="CommonTree_32" unique_id=382893235 instance=ExtResource("2_65hvk")]
+transform = Transform3D(0.77544034, 0, -0.4879925, 0, 0.91621196, 0, 0.4879925, 0, 0.77544034, 8.908209, 0, -0.5398536)
+
+[node name="CommonTree_52" parent="CommonTree_32" unique_id=1156095121 instance=ExtResource("4_e0x3u")]
+transform = Transform3D(0.77544034, 0, -0.4879925, 0, 0.91621196, 0, 0.4879925, 0, 0.77544034, 7.974785, 0, -2.0460048)
+
+[node name="CommonTree_22" parent="CommonTree_32/CommonTree_52" unique_id=1224222666 instance=ExtResource("1_6bhk8")]
+transform = Transform3D(0.7754404, 0, -0.48799253, 0, 0.91621196, 0, 0.48799253, 0, 0.7754404, -5.645253, 0, 9.148336)
+
+[node name="CommonTree_42" parent="CommonTree_32/CommonTree_52" unique_id=564445025 instance=ExtResource("2_65hvk")]
+transform = Transform3D(0.7754404, 0, -0.48799253, 0, 0.91621196, 0, 0.48799253, 0, 0.7754404, -2.9345393, 0, 11.176922)
+
+[node name="CommonTree_32" parent="CommonTree_32/CommonTree_52" unique_id=1092219832 instance=ExtResource("3_kxv44")]
+transform = Transform3D(0.7754404, 0, -0.48799253, 0, 0.91621196, 0, 0.48799253, 0, 0.7754404, -7.7970366, 0, 10.607624)
+
+[node name="CommonTree_43" parent="CommonTree_32/CommonTree_52" unique_id=1797079951 instance=ExtResource("2_65hvk")]
+transform = Transform3D(0.7754404, 0, -0.48799253, 0, 0.91621196, 0, 0.48799253, 0, 0.7754404, -2.6387677, 0, 8.231816)
+
+[node name="CommonTree_52" parent="CommonTree_32/CommonTree_52" unique_id=1846226158 instance=ExtResource("4_e0x3u")]
+transform = Transform3D(0.7754404, 0, -0.48799253, 0, 0.91621196, 0, 0.48799253, 0, 0.7754404, -3.5721927, 0, 6.725663)
+
+[node name="CommonTree_43" parent="." unique_id=1771572164 instance=ExtResource("2_65hvk")]
+transform = Transform3D(0.3732006, 0, 0, 0, 0.3732006, 0, 0, 0, 0.3732006, 0.025273144, 0, -4.8006797)
+
+[node name="CommonTree_52" parent="." unique_id=734806629 instance=ExtResource("4_e0x3u")]
+transform = Transform3D(0.3732006, 0, 0, 0, 0.3732006, 0, 0, 0, 0.3732006, -0.62328327, 0, -5.1174097)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1613198841]
+transform = Transform3D(18.438461, 0, 0, 0, 1, 0, 0, 0, 14.516246, 0, 0, -4.473995)
+material_override = SubResource("StandardMaterial3D_6w704")
+mesh = SubResource("PlaneMesh_5b57c")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1929587231]
+environment = SubResource("Environment_u3yay")

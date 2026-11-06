@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://su74a08cw2ba"]
+
+[ext_resource type="PackedScene" uid="uid://sdg8rx770a3a" path="res://Models/Scenery/glTF/CommonTree_3.gltf" id="3_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://6xbovawma1qt" path="res://Models/Scenery/glTF/CommonTree_2.gltf" id="4_c01mt"]
+[ext_resource type="PackedScene" uid="uid://daeac5m0t5l6k" path="res://Models/Scenery/glTF/CommonTree_4.gltf" id="4_nxtc6"]
+[ext_resource type="PackedScene" uid="uid://cvoqd6j448kp7" path="res://Models/Scenery/glTF/CommonTree_5.gltf" id="5_jlsqs"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nxtc6"]
+load_path = "res://.godot/imported/Rocks_Desert_Diffuse.png-f8592eb8ef4bebafb6db6f9a973a0539.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jlsqs"]
+albedo_texture = SubResource("CompressedTexture2D_nxtc6")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_avqii"]
+
+[node name="Main" type="Node3D" unique_id=611062800]
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=830033557]
+transform = Transform3D(1, 0, 0, 0, 0.39937437, 0.9167879, 0, -0.9167879, 0.39937437, 0, 3.7920322, 0.8767582)
+
+[node name="Camera" type="Camera3D" parent="." unique_id=757319249]
+transform = Transform3D(1, 0, 0, 0, 0.9868636, 0.16155571, 0, -0.16155571, 0.9868636, 0, 1.5027058, 2.6695578)
+current = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=219535578]
+transform = Transform3D(6.813648, 0, 0, 0, 1, 0, 0, 0, 6.813648, 0, 0, -5.550907)
+material_override = SubResource("StandardMaterial3D_jlsqs")
+mesh = SubResource("PlaneMesh_avqii")
+
+[node name="CommonTree_22" parent="." unique_id=2090308988 instance=ExtResource("4_c01mt")]
+transform = Transform3D(0.7042086, 0, 0, 0, 0.7042086, 0, 0, 0, 0.7042086, -1.6562729, -0.031653404, -0.914469)
+
+[node name="CommonTree_32" parent="." unique_id=121165285 instance=ExtResource("3_vcsgt")]
+transform = Transform3D(0.877133, 0, 0, 0, 0.877133, 0, 0, 0, 0.877133, 0.8608999, -0.09543419, -3.5433786)
+
+[node name="CommonTree_42" parent="." unique_id=1019504248 instance=ExtResource("4_nxtc6")]
+transform = Transform3D(0.4727882, 0, 0, 0, 0.4727882, 0, 0, 0, 0.4727882, -1.041049, 0, -3.3032234)
+
+[node name="CommonTree_52" parent="." unique_id=1156095121 instance=ExtResource("5_jlsqs")]
+transform = Transform3D(0.68147326, 0, 0, 0, 0.68147326, 0, 0, 0, 0.68147326, 2.6239362, 0, -0.70556426)

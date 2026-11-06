@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://c56wxy6aatrrk"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5c4mr"]
+
+[sub_resource type="Sky" id="Sky_okvka"]
+sky_material = SubResource("ProceduralSkyMaterial_5c4mr")
+
+[sub_resource type="Environment" id="Environment_s1sq6"]
+background_mode = 2
+sky = SubResource("Sky_okvka")
+ambient_light_source = 3
+fog_enabled = true
+
+[sub_resource type="LabelSettings" id="LabelSettings_5c4mr"]
+font_size = 35
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1tsv2"]
+bg_color = Color(0.90881616, 0.44600296, 0.30453476, 1)
+
+[node name="Node3D" type="Node3D" unique_id=1035383781]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=617703197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14.562254)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2023837]
+environment = SubResource("Environment_s1sq6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=201533897]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+accessibility_region = true
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=2146222990]
+custom_maximum_size = Vector2(-1, 300)
+layout_mode = 2
+size_flags_vertical = 3
+label_settings = SubResource("LabelSettings_5c4mr")
+autowrap_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=67682246]
+offset_top = 304.0
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=645187803]
+layout_mode = 2
+
+[node name="Left" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=847650015]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainer/Left" unique_id=1946573195]
+custom_minimum_size = Vector2(350, 300)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Top" type="Label" parent="MarginContainer/HBoxContainer/Left/MarginContainer" unique_id=784263988]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tsv2")
+text = "Top"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bottom" type="Label" parent="MarginContainer/HBoxContainer/Left/MarginContainer" unique_id=1592342425]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tsv2")
+text = "Bottom"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftLabel" type="Label" parent="MarginContainer/HBoxContainer/Left/MarginContainer" unique_id=110142910]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tsv2")
+text = "Left"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Right" type="Label" parent="MarginContainer/HBoxContainer/Left/MarginContainer" unique_id=403271868]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tsv2")
+text = "Right"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Right" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1325242300]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainer/Right" unique_id=1330444162]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Selection" type="Label" parent="MarginContainer/HBoxContainer/Right/MarginContainer" unique_id=2126508432]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tsv2")
+text = "Selection"
+horizontal_alignment = 1
+vertical_alignment = 1

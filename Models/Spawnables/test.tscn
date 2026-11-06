@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dpurwcwxl1a05"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_avqii"]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" unique_id=2141925444]
+mesh = SubResource("CapsuleMesh_avqii")

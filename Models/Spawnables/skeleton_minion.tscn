@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://bhs144uvwvxqf"]
+
+[ext_resource type="PackedScene" uid="uid://0dev181re4jc" path="res://Models/KayKit_Skeletons_1.1_FREE/characters/gltf/Skeleton_Minion.glb" id="1_t0y27"]
+[ext_resource type="AnimationLibrary" uid="uid://dd16nhwhvffis" path="res://Models/KayKit_Skeletons_1.1_FREE/Animations/gltf/Rig_Medium/Rig_Medium_General.glb" id="2_fghry"]
+[ext_resource type="Script" uid="uid://crwmwhqsn4i3g" path="res://scripts/AnimationStarter.cs" id="2_nmn2p"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_nmn2p"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nmn2p"]
+bg_color = Color(1, 0, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.2901961, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Skeleton_Minion" unique_id=1419273363 node_paths=PackedStringArray("_animationPlayer") instance=ExtResource("1_t0y27")]
+script = ExtResource("2_nmn2p")
+_animationPlayer = NodePath("AnimationPlayer")
+
+[node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(827009453) index="0" unique_id=1779452910]
+bones/1/position = Vector3(0, 0.39206383, 0)
+bones/1/rotation = Quaternion(-1.11122625e-10, 0.043157753, 2.5724098e-09, 0.9990683)
+bones/1/scale = Vector3(0.99999994, 1, 0.99999994)
+bones/2/position = Vector3(-0.17094508, 0.11358732, 1.557549e-08)
+bones/2/rotation = Quaternion(0.9973222, -0.029457364, 0.03152927, 0.05904832)
+bones/2/scale = Vector3(0.9999999, 0.99999976, 1.0000008)
+bones/3/rotation = Quaternion(0.2740081, -6.3812955e-08, 1.927607e-07, 0.9617275)
+bones/4/rotation = Quaternion(-0.5590394, 0.11451276, -0.008627633, 0.82115)
+bones/5/rotation = Quaternion(-8.934892e-05, 0.9202217, -0.3913977, 2.0290998e-05)
+bones/6/position = Vector3(0.17094508, 0.1135872, 1.5994095e-08)
+bones/6/rotation = Quaternion(0.9927243, -0.003953806, 0.04276561, 0.11248982)
+bones/6/scale = Vector3(0.9999999, 0.99999976, 1.0000008)
+bones/7/rotation = Quaternion(0.2954667, 6.279743e-08, -2.0384442e-07, 0.95535314)
+bones/8/rotation = Quaternion(-0.5400721, 4.1242718e-05, 0.0009099837, 0.8416183)
+bones/9/rotation = Quaternion(-2.2034567e-06, 0.9202539, -0.391322, 5.6286603e-07)
+bones/9/scale = Vector3(1, 0.9999977, 1.0000024)
+bones/10/rotation = Quaternion(-6.938893e-18, 7.1054274e-15, 4.93038e-32, 1)
+bones/10/scale = Vector3(1.0000001, 1, 1.0000001)
+bones/11/rotation = Quaternion(8.271806e-25, 3.7252903e-09, -2.75506e-40, 1)
+bones/11/scale = Vector3(1, 0.9999999, 1)
+bones/12/rotation = Quaternion(-5.8060785e-11, -0.031341746, -1.880125e-09, 0.99950874)
+bones/12/scale = Vector3(1, 0.99999994, 1)
+bones/13/position = Vector3(0.21200736, 0.13413203, 7.9299625e-08)
+bones/13/rotation = Quaternion(-0.5599063, -0.060880348, -0.6439745, 0.5177794)
+bones/13/scale = Vector3(0.9999991, 0.9999986, 0.9999996)
+bones/14/rotation = Quaternion(3.7650654e-08, -5.1384802e-08, -0.4947193, 0.8690529)
+bones/15/rotation = Quaternion(7.250843e-09, 9.200791e-09, 0.026658095, 0.99964464)
+bones/16/rotation = Quaternion(-0.32106528, -0.32531866, 0.1457259, 0.8774103)
+bones/17/position = Vector3(-6.936717e-09, 0.096125185, -0.057500005)
+bones/17/rotation = Quaternion(6.9489685e-09, -3.587743e-09, -0.7071068, 0.7071067)
+bones/18/position = Vector3(-0.21200737, 0.13413203, 8.6813984e-08)
+bones/18/rotation = Quaternion(-0.6182439, 0.08072865, 0.61801153, 0.47887278)
+bones/18/scale = Vector3(0.99999905, 0.9999985, 0.9999996)
+bones/19/rotation = Quaternion(2.1687793e-08, 6.223694e-08, 0.5179393, 0.85541743)
+bones/20/rotation = Quaternion(7.300499e-09, -7.3388096e-09, -0.0266581, 0.99964464)
+bones/21/rotation = Quaternion(-0.31929126, 0.30052418, -0.22734971, 0.8695116)
+bones/22/position = Vector3(-1.541501e-08, 0.096125126, -0.057499975)
+bones/22/rotation = Quaternion(-9.53579e-10, -4.3147743e-09, 0.7071068, 0.7071067)
+bones/22/scale = Vector3(1, 1.0000001, 1.0000001)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=1113885799]
+libraries/Rig_Medium_General = ExtResource("2_fghry")
+
+[node name="Sprite3D" type="Sprite3D" parent="." index="2" unique_id=1633473020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3491235, 0)
+texture = SubResource("ViewportTexture_nmn2p")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D" index="0" unique_id=100453909]
+transparent_bg = true
+size = Vector2i(100, 40)
+render_target_update_mode = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="Sprite3D/SubViewport" index="0" unique_id=83206459]
+custom_minimum_size = Vector2(0, 40)
+custom_maximum_size = Vector2(100, -1)
+propagate_maximum_size = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 10
+offset_transform_enabled = true
+theme_override_styles/fill = SubResource("StyleBoxFlat_nmn2p")
+value = 100.0
+rounded = true
+show_percentage = false
